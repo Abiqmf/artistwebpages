@@ -1,0 +1,17 @@
+.h1{
+text-align: center;
+color: blanchedalmond;
+font-size: 80px;
+background-color: coral;
+text-decoration-color: bisque;
+text-transform: uppercase;
+text-decoration: line-through;
+border-radius: 26%;
+}
+.ul1{
+    background-color: blanchedalmond;
+    color: coral;
+    font-size: medium;
+    text-decoration: bisque;
+
+}

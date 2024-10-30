@@ -3,148 +3,151 @@
 
 <head> <!-- partie non visible, ce qui est necessaire pour le fonctionnement du site web--></head>
 <title> le titre de mon site </title>
+<link rel="stylesheet" href="Ninho.css">
 
 <body>
     <header>
         <img src="" alt=""> <!-- ici le logo -->
-        <h1>WikArtist</h1>
+        <h1 class= "h1">WikArtist</h1>
         <nav>
             <ul>
                 <li><a href="#Description">Description</a></li>
-                <li><a href="#ReseauxSociaux">Reseaux Sociaux</a></li>
                 <li><a href="#Album">Album</a></li>
                 <li><a href="#TopTitre">Top Titre</a></li>
                 <li><a href="#DernièreSortie">Dernière Sortie</a></li>
                 <li><a href="#ArtisteSimilaire">Artiste similaire</a></li>
+                <li><a href="#ReseauxSociaux">Reseaux Sociaux</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>ARTISTE : <strong>Ninho</strong></h2>
+    <section>
+        <main>
+            <h2>ARTISTE : <strong>Ninho</strong></h2>
 
 
-        <img src="https://img.20mn.fr/F7ExZtjHRha_NOX4SUXUvik/1444x920_rappeur-ninho" alt="" width="450">
-        <p><em>5,7 millions d'auditeurs. </em></p>
+            <img src="https://img.20mn.fr/F7ExZtjHRha_NOX4SUXUvik/1444x920_rappeur-ninho" alt="" width="450">
+            <p><em>5,7 millions d'auditeurs. </em></p>
 
 
-        <h2 id="Description">Description :</h2>
-        <p>Ninho [niɲo], pseudonyme de <em>William Nzobazola</em>, est un rappeur, chanteur, auteur-compositeur et
-            entrepreneur français, né le <em>2 avril 1996</em> à Longjumeau. Il est détenteur du record français du
-            nombre
-            de singles certifiés, avec <em>160 singles d'or</em>, 90 de platine et <em>50 de diamant</em></p>
-        <a href="https://fr.wikipedia.org/wiki/Ninho">
-            <title>En savoir plus sur Ninho</title> En savoir plus sur Ninho
-        </a>
-        <br>
-        <p><strong>Maison de disque:</strong> rec. 118</p>
-        <img src="data:image/png;base64,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"
-            alt="">
-        <a href="https://www.rec118.com/timeline/2016/">
-            <title>En savoir plus sur Rec°118</title>En savoir plus sur Rec°118
-        </a>
-        <p><strong>Date/Lieu de naissance : </strong> <em>2 avril 1996 (Âge: 28 ans), Longjumeau</em></p>
-        <br>
-        <h3 id="ReseauxSociaux">Reseaux Sociaux : </h3>
-        <ul>
-            <li>Instagram : <em>Sdt (@ninhosdt) </em> </li>
-            <li>Youtube : <em>@ninho</em></li>
-            <li>Twitter : <em>NINHO SDT (@ninhosdt)</em> </li>
-            <li>Snapchat : <em>Ninhosdt</em> </li>
-        </ul>
+            <h2 id="Description">Description :</h2>
+            <p>Ninho [niɲo], pseudonyme de <em>William Nzobazola</em>, est un rappeur, chanteur, auteur-compositeur et
+                entrepreneur français, né le <em>2 avril 1996</em> à Longjumeau. Il est détenteur du record français du
+                nombre
+                de singles certifiés, avec <em>160 singles d'or</em>, 90 de platine et <em>50 de diamant</em></p>
+            <p><strong>Date/Lieu de naissance : </strong> <em>2 avril 1996 (Âge: 28 ans), Longjumeau</em></p>
+            <a href="https://fr.wikipedia.org/wiki/Ninho">
+                <title>En savoir plus sur Ninho</title> En savoir plus sur Ninho
+            </a>
+            <br>
+            <p><strong>Maison de disque:</strong> rec. 118</p>
+            <img src="data:image/png;base64,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"
+                alt="">
+            <a href="https://www.rec118.com/timeline/2016/">
+                <title>En savoir plus sur Rec°118</title>En savoir plus sur Rec°118
+            </a>
 
+    </section>
+
+    <section>
         <h4 id="Album">Album :</h4>
-        <ul>
-            <li><em>2023. NI.</em></li> <img
-                src="https://www.booska-p.com/wp-content/uploads/2023/06/ninho-ni-news-visu.jpg" alt="" width="150">
+        <div>
+            <ul>
+                <li><em>2023. NI.</em></li> <img
+                    src="https://www.booska-p.com/wp-content/uploads/2023/06/ninho-ni-news-visu.jpg" alt="" width="150">
 
-            <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1647794761&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-            <div
-                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                <a href="https://soundcloud.com/ninhoofficial" title="Ninho" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Ninho</a> · <a
-                    href="https://soundcloud.com/ninhoofficial/sets/ni-extension" title="NI (Extension)" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">NI (Extension)</a>
-            </div>
+                <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1647794761&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        </div>
+        <div>
+           
+            <a href="https://soundcloud.com/ninhoofficial" title="Ninho" target="_blank"
+                style="color: #cccccc; text-decoration: none;">Ninho</a> · <a
+                href="https://soundcloud.com/ninhoofficial/sets/ni-extension" title="NI (Extension)" target="_blank"
+                style="color: #cccccc; text-decoration: none;">NI (Extension)</a>
+        </div>
 
-            <li><em>2021. Jefe.</em></li> <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTGiJIY-l_kGLkVZfuDFs-kMqFmDeSyYuPJQ&s"
-                alt="" width="150" height="150">
+        <li><em>2021. Jefe.</em></li> <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTGiJIY-l_kGLkVZfuDFs-kMqFmDeSyYuPJQ&s" alt=""
+            width="150" height="150">
 
-            <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1356415282&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-            <div
-                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                <a href="https://soundcloud.com/ninhoofficial" title="Ninho" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Ninho</a> · <a
-                    href="https://soundcloud.com/ninhoofficial/sets/jefe-199136314" title="Jefe" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Jefe</a>
-            </div>
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1356415282&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <div
+            style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+            <a href="https://soundcloud.com/ninhoofficial" title="Ninho" target="_blank"
+                style="color: #cccccc; text-decoration: none;">Ninho</a> · <a
+                href="https://soundcloud.com/ninhoofficial/sets/jefe-199136314" title="Jefe" target="_blank"
+                style="color: #cccccc; text-decoration: none;">Jefe</a>
+        </div>
 
-            <li><em>2020. M.I.L.S 3.</em></li> <img
-                src="https://cdns-images.dzcdn.net/images/cover/b351f0e935c9c3901f8d893b92ab952a/0x1900-000000-80-0-0.jpg"
-                alt="" width="150">
+        <li><em>2020. M.I.L.S 3.</em></li> <img
+            src="https://cdns-images.dzcdn.net/images/cover/b351f0e935c9c3901f8d893b92ab952a/0x1900-000000-80-0-0.jpg"
+            alt="" width="150">
 
-            <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1153796440&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-            <div
-                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                <a href="https://soundcloud.com/ninhoofficial" title="Ninho" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Ninho</a> · <a
-                    href="https://soundcloud.com/ninhoofficial/sets/m-i-l-s-3-reedition" title="M.I.L.S 3 (Réédition)"
-                    target="_blank" style="color: #cccccc; text-decoration: none;">M.I.L.S 3 (Réédition)</a>
-            </div>
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1153796440&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <div
+            style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+            <a href="https://soundcloud.com/ninhoofficial" title="Ninho" target="_blank"
+                style="color: #cccccc; text-decoration: none;">Ninho</a> · <a
+                href="https://soundcloud.com/ninhoofficial/sets/m-i-l-s-3-reedition" title="M.I.L.S 3 (Réédition)"
+                target="_blank" style="color: #cccccc; text-decoration: none;">M.I.L.S 3 (Réédition)</a>
+        </div>
 
-            <li><em>2019. Destin.</em></li> <img src="https://i.scdn.co/image/ab67616d0000b27349f298c896b4e4237e2a614e"
-                alt="" width="150" height="150">
+        <li><em>2019. Destin.</em></li> <img src="https://i.scdn.co/image/ab67616d0000b27349f298c896b4e4237e2a614e"
+            alt="" width="150" height="150">
 
-            <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/734703567&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-            <div
-                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                <a href="https://soundcloud.com/ninhoofficial" title="Ninho" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Ninho</a> · <a
-                    href="https://soundcloud.com/ninhoofficial/sets/destin-7" title="Destin" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Destin</a>
-            </div>
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/734703567&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <div
+            style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+            <a href="https://soundcloud.com/ninhoofficial" title="Ninho" target="_blank"
+                style="color: #cccccc; text-decoration: none;">Ninho</a> · <a
+                href="https://soundcloud.com/ninhoofficial/sets/destin-7" title="Destin" target="_blank"
+                style="color: #cccccc; text-decoration: none;">Destin</a>
+        </div>
 
-            <li><em>2017. Comme Prévu.</em></li> <img
-                src="https://cdns-images.dzcdn.net/images/cover/511e592e1aa60d2a24f227fd3b190f97/0x1900-000000-80-0-0.jpg"
-                alt="" width="150">
+        <li><em>2017. Comme Prévu.</em></li> <img
+            src="https://cdns-images.dzcdn.net/images/cover/511e592e1aa60d2a24f227fd3b190f97/0x1900-000000-80-0-0.jpg"
+            alt="" width="150">
 
-            <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1380326077&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-            <div
-                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                <a href="https://soundcloud.com/ninhoofficial" title="Ninho" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Ninho</a> · <a
-                    href="https://soundcloud.com/ninhoofficial/sets/comme-prevu-1" title="Comme prévu" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Comme prévu</a>
-            </div>
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1380326077&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <div
+            style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
 
-            <li><em>2016. M.I.L.S.</em></li> <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqDOcbJeyWGVCzuvVxnhwqDlt0V9_5l3jD3A&s"
-                alt="" width="150">
+            <a href="https://soundcloud.com/ninhoofficial" title="Ninho" target="_blank"
+                style="color: #cccccc; text-decoration: none;">Ninho</a> · <a
+                href="https://soundcloud.com/ninhoofficial/sets/comme-prevu-1" title="Comme prévu" target="_blank"
+                style="color: #cccccc; text-decoration: none;">Comme prévu</a>
+        </div>
 
-            <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/269105684&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-            <div
-                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                <a href="https://soundcloud.com/ninhoofficial" title="Ninho" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Ninho</a> · <a
-                    href="https://soundcloud.com/ninhoofficial/sets/m-i-l-s" title="M.I.L.S" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">M.I.L.S</a>
-            </div>
+        <li><em>2016. M.I.L.S.</em></li> <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqDOcbJeyWGVCzuvVxnhwqDlt0V9_5l3jD3A&s" alt=""
+            width="150">
 
-            <li><em>2016. Maintenant Ils Le Savent.</em></li>
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/269105684&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <div
+            style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+            <a href="https://soundcloud.com/ninhoofficial" title="Ninho" target="_blank"
+                style="color: #cccccc; text-decoration: none;">Ninho</a> · <a
+                href="https://soundcloud.com/ninhoofficial/sets/m-i-l-s" title="M.I.L.S" target="_blank"
+                style="color: #cccccc; text-decoration: none;">M.I.L.S</a>
+        </div>
+
+        <li><em>2016. Maintenant Ils Le Savent.</em></li>
+        <div>
             <li><em>2016. ISPAC 2.</em></li> <img src="https://i1.sndcdn.com/artworks-000143654612-s2iln6-t500x500.jpg"
                 alt="" width="150">
-        </ul>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/hqcPo4YvPss?si=UuCgG5tTTIxls7ur"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+            </ul>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hqcPo4YvPss?si=UuCgG5tTTIxls7ur"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section>
         <h5 id="TopTitre">Top Titre : </h5>
 
         <ol>
@@ -170,55 +173,70 @@
             <li><strong>Tout en Gucci</strong></li>
         </ol>
         <p><em>source Spotify</em></p>
-
+    </section>
+    <section>
         <h6 id="DernièreSortie">Dernière Sortie</h6>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wJIVRImbyXs?si=MrMYARFkV3PWydOY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p><em>Ninho feat Niska - entretien exclusif </em></p>
+        </div>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/wJIVRImbyXs?si=MrMYARFkV3PWydOY"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <p><em>Ninho feat Niska - entretien exclusif </em></p>
-
-
-        <br>
+    </section>
+    <section>
         <h7 id="ArtisteSimilaire">Artiste similaires</h7>
-        <ul>
-            <li><a href="https://fr.wikipedia.org/wiki/Leto_(rappeur)" target="_blank">
-                    <title></title>Leto
-                </a></li>
-            <li><a href="https://fr.wikipedia.org/wiki/Gazo" target="_blank">
-                    <title></title>Gazo
-                </a></li>
-            <li><a href="https://fr.wikipedia.org/wiki/Niska" target="_blank">
-                    <title></title>Niska
-                </a></li>
-            <li><a href="https://fr.wikipedia.org/wiki/Niro" target="_blank">
-                    <title></title>Niro
-                </a></li>
-            <li><a href="https://fr.wikipedia.org/wiki/Tiakola" target="_blank">
-                    <title></title>Tiakola
-                </a></li>
-            <li><a href="https://fr.wikipedia.org/wiki/Koba_LaD" target="_blank">
-                    <title></title>Koba La D
-                </a></li>
-            <li><a href="https://fr.wikipedia.org/wiki/SDM" target="_blank">
-                    <title></title>SDM
-                </a></li>
-            <li><a href="https://fr.wikipedia.org/wiki/Guy2Bezbar" target="_blank">
-                    <title></title>Guy2Bezbar
-                </a></li>
-            <li><a href="https://fr.wikipedia.org/wiki/Da_Uzi" target="_blank">
-                    <title></title>Da Uzi
-                </a></li>
-            <li><a href="https://fr.wikipedia.org/wiki/Werenoi" target="_blank">
-                    <title></title>Werenoi
-                </a></li>
-
+        <nav>
+            <ul>
+                <li><a href="https://fr.wikipedia.org/wiki/Leto_(rappeur)" target="_blank">
+                        <title></title>Leto
+                    </a></li>
+                <li><a href="https://fr.wikipedia.org/wiki/Gazo" target="_blank">
+                        <title></title>Gazo
+                    </a></li>
+                <li><a href="https://fr.wikipedia.org/wiki/Niska" target="_blank">
+                        <title></title>Niska
+                    </a></li>
+                <li><a href="https://fr.wikipedia.org/wiki/Niro" target="_blank">
+                        <title></title>Niro
+                    </a></li>
+                <li><a href="https://fr.wikipedia.org/wiki/Tiakola" target="_blank">
+                        <title></title>Tiakola
+                    </a></li>
+                <li><a href="https://fr.wikipedia.org/wiki/Koba_LaD" target="_blank">
+                        <title></title>Koba La D
+                    </a></li>
+                <li><a href="https://fr.wikipedia.org/wiki/SDM" target="_blank">
+                        <title></title>SDM
+                    </a></li>
+                <li><a href="https://fr.wikipedia.org/wiki/Guy2Bezbar" target="_blank">
+                        <title></title>Guy2Bezbar
+                    </a></li>
+                <li><a href="https://fr.wikipedia.org/wiki/Da_Uzi" target="_blank">
+                        <title></title>Da Uzi
+                    </a></li>
+                <li><a href="https://fr.wikipedia.org/wiki/Werenoi" target="_blank">
+                        <title></title>Werenoi
+                    </a></li>
+        </nav>
 
         </ul>
         <p><a href="Niska.html">Niska</a></p>
+        <!--passer d'une page à l'autre en mettant mon lien html crée sur VScode-->
+    </section>
     </main>
-    <footer></footer>
+    <footer>
+    <section>
+        <h3 id="ReseauxSociaux">Reseaux Sociaux : </h3>
+
+        <nav><a href=""><img src="" alt=""><em>Instagram : Sdt (@ninhosdt) </em></a>
+            <a href=""><img src="" alt=""><em>Twitter : NINHO SDT (@ninhosdt)</em> </a>
+            <a href=""><img src="" alt=""><em>Youtube :@ninho</em></li></a>
+            <a href=""><img src="" alt=""><em>Snapchat :Ninhosdt</em> </a>
+        </nav>
+    </footer>
+    </section>
 </body>
 
 </html>
